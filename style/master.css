@@ -28,39 +28,47 @@ section {
   width: 100%;
   left: 50px;
   transition: 1s all ease;
-
+  padding-left: 20px;
 }
 
 #main-menu:target ~ .all{
     left: 320px;
 }
 
-#main-menu a {
+#main-menu a:first-of-type {
   position: absolute;
   top: 10px;
   right: 10px;
-  display: block;
 }
 
-
-#main-menu:target ~ a {
+/* #main-menu:target ~ a {
   display: none;
-}
+} */
 
-#main-menu:target ~ .close-menu{
+/* #main-menu:target ~ .close-menu{
   display: block;
-}
+} */
 
 .close-menu{
-  display: none;
   position: absolute;
-  top: 10px;
+  top: 50px;
   right: 10px;
 }
 
 
-
-nav {
-  position:absolute;
-  top: 25vh;
+nav{
+  width: 60%;
+  height: 40%;
+  position: absolute;
+  top: 100px;
+  left: 20px;
 }
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+}
+
+ nav li {
+   display: inline-block;
+ }
