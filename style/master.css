@@ -1,12 +1,12 @@
 body{
   background-color: #FFC9B5;
   font-family: 'Raleway', sans-serif;
-
+  overflow-x: hidden;
 }
 
 section {
   border-bottom: 2px solid red;
-  min-height: 65vh;
+  min-height: 205vh;
 }
 
 #main-menu{
@@ -39,15 +39,28 @@ section {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: block;
 }
+
+
+#main-menu:target ~ a {
+  display: none;
+}
+
+#main-menu:target ~ .close-menu{
+  display: block;
+}
+
+.close-menu{
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 
 
 nav {
   position:absolute;
   top: 25vh;
 }
-
-/*
-.close-menu{
-  display: none;
-} */
