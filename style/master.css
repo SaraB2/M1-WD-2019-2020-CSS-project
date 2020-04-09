@@ -1,5 +1,7 @@
 body{
   background-color: pink;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 section {
@@ -13,10 +15,38 @@ section {
   width: 320px;
   position: absolute;
   top: 0;
-  left: -320px;
+  left: -270px;
   transition: 1s all ease;
 }
 
 #main-menu:target{
-  left: 0;
+  left: 0px;
 }
+
+.all{
+  position: absolute;
+  width: 100%;
+  left: 50px;
+  transition: 1s all ease;
+
+}
+
+#main-menu:target ~ .all{
+    left: 320px;
+}
+
+#main-menu a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+nav {
+  position:absolute;
+  top: 25vh;
+}
+/*
+.close-menu{
+  display: none;
+} */
