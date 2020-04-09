@@ -1,5 +1,7 @@
 body{
   background-color: pink;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 section {
@@ -20,3 +22,14 @@ section {
 #main-menu:target{
   left: 0;
 }
+
+#main-menu:not{
+  left: 320px;
+}
+
+nav {
+  position:absolute;
+  top: 25vh;
+}
+
+.close-menu{}
