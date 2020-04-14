@@ -18,6 +18,11 @@ section {
   left: -270px;
   transition: 1s all ease;
 }
+.burger-menu{
+  position: absolute;
+  top: 20px;
+  right: 9px;
+}
 
 #main-menu:target{
   left: 0px;
