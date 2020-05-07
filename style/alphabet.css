@@ -1,11 +1,41 @@
 
 #container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
+  margin-right: 90px;
+  width: 100px;
 }
+
 .box{
-  background: #333;
-  color: #fff;
-  padding: 1%;
+  background: #FFF;
+  color: pink;
+  padding: 3%;
 }
+
+/*
+#grid{
+  display: none;
+}
+
+#flex{
+  display: none;
+} */
+
+/* #grid:target + classe{
+	display: block;
+}
+
+#flex:target {
+	display: block;
+} */
+
+#container:target {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+#flex:target ~ .grid {
+	display: none;
+} */
