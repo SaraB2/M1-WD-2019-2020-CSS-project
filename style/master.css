@@ -46,7 +46,7 @@ section {
 
 .all{
   position: absolute;
-  /* width: 100em; C'est cette ligne qui créait le bug de position au clic */
+  /* width: 100%; C'est cette ligne qui créait le bug de position au clic */
   left: 50px;
   padding-left: 20px;
   transition: 1s all ease;
