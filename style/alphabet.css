@@ -76,18 +76,17 @@ svg{
 #bleu1, #bleu2{
   fill: #93C1C1;
   /* transition: fill 1s ease-in-out; */
-  animation: 1.2s linear 3s infinite alternate pulse;
+  animation: 1.1s ease-in 2s infinite alternate pulse;
 }
 
 svg:hover {
   cursor: pointer;
 }
+
 /*
 svg:hover #bleu1, svg:hover #bleu2 {
   fill: #B2EDE7;
 } */
-
-
 
 @keyframes pulse {
   from {
