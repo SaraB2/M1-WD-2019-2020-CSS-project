@@ -21,7 +21,9 @@ h1{
 
 section {
   border-bottom: 2px solid pink;
-  min-height: 205vh;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 #main-menu{
@@ -34,22 +36,25 @@ section {
   transition: 1s all ease;
   z-index: 999;
 }
+
 .burger-menu{
   position: absolute;
   top: 20px;
   right: 9px;
 }
 
-#main-menu:target{
-  left: 0px;
-}
 
 .all{
   position: absolute;
-  width: 100%;
+  /* width: 100%; C'est cette ligne qui créait le bug de position au clic */
   left: 50px;
-  transition: 1s all ease;
   padding-left: 20px;
+  transition: 1s all ease;
+}
+
+
+#main-menu:target{
+  left: 0px;
 }
 
 #main-menu:target ~ .all{
@@ -58,7 +63,6 @@ section {
 
 .backdrop{
   transition: 1s all ease;
-
 }
 
 #main-menu:target + .backdrop {
