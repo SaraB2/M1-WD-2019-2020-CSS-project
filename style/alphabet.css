@@ -8,10 +8,22 @@
 }
 
 .box{
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.2);
   color: pink;
   padding: 3%;
+
+
 }
+/*
+.box:first-of-type{
+  background-image: url(../photos/alphabet/A.png);
+} */
+
+#container:target {
+  display: flex;
+  flex-direction: column;
+}
+
 
 /*
 #grid{
@@ -30,10 +42,6 @@
 	display: block;
 } */
 
-#container:target {
-  display: flex;
-  flex-direction: column;
-}
 
 /*
 #flex:target ~ .grid {
