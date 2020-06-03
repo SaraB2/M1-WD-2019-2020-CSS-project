@@ -24,6 +24,7 @@ section {
   min-height: 100vh;
   padding-bottom: 40px;
   margin-bottom: 10px;
+  width: 92VW;
 }
 
 #main-menu{
@@ -31,16 +32,51 @@ section {
   height: 60px;
   width: 320px;
   position: fixed;
-  top: 0;
+  top: 20px;
   left: -270px;
   transition: 1s all ease;
   z-index: 999;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .burger-menu{
   position: absolute;
-  top: 20px;
-  right: 9px;
+  top: 12px;
+  right: 5px;
+  width: 40px;
+}
+
+
+.burger-menu path{
+  fill: white;
+}
+
+#barre-1{
+  transition: all 1s ease-out;
+}
+
+#barre-2{
+  transition: all 1s ease-out;
+}
+
+#barre-3{
+  transition: all 1s ease-out;
+}
+
+#main-menu:target #barre-1{
+  transform: rotate(45deg);
+  transform-origin: 24% 37%;
+}
+
+#main-menu:target #barre-2{
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+#main-menu:target #barre-3{
+  transform: rotate(-45deg);
+  transform-origin: 26% 60%;
 }
 
 
@@ -55,11 +91,12 @@ section {
 
 #main-menu:target{
   left: 0px;
+  top: 0px;
   height: 100%;
 }
 
 #main-menu:target ~ .all{
-    left: 320px;
+  left: 320px;
 }
 
 .backdrop{
@@ -68,7 +105,7 @@ section {
 
 #main-menu:target + .backdrop {
   display: block;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   top : 0;
   left : 0;
