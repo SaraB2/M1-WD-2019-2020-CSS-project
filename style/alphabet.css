@@ -19,7 +19,14 @@ header{
   z-index: 10;
   left: 50px;
   padding-left: 20px;
+  align-items: center;
+  transition: 1s all ease;
 }
+
+#main-menu:target ~ header{
+    left: 320px;
+}
+
 
 #container{
   display: grid;
@@ -65,7 +72,12 @@ header{
   background-position: center;
 }
 
-
+h1{
+  width: 92%;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
 
 /* A */
 

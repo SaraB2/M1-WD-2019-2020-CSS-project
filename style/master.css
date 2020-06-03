@@ -1,5 +1,5 @@
 body{
-  background-color: #FFC9B5;
+  background-color: #EEE5D3;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   overflow-x: hidden;
@@ -20,15 +20,15 @@ h1{
 }
 
 section {
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid #F39483;
   min-height: 100vh;
   padding-bottom: 40px;
   margin-bottom: 10px;
 }
 
 #main-menu{
-  background-color: #9dc5bb;
-  height: 100vh;
+  background-color: #F39483;
+  height: 60px;
   width: 320px;
   position: fixed;
   top: 0;
@@ -55,6 +55,7 @@ section {
 
 #main-menu:target{
   left: 0px;
+  height: 100%;
 }
 
 #main-menu:target ~ .all{
@@ -67,7 +68,7 @@ section {
 
 #main-menu:target + .backdrop {
   display: block;
-  background: rgba(157, 197, 187, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top : 0;
   left : 0;
