@@ -211,7 +211,7 @@ img:hover{
 .st4-o{fill:#EEE5D3;}
 
 #lettre-o{
-  transform: scale(1);
+  transform: scale(0.5);
   transform-origin: 50% 50%;
   transition: all 1s ease-out;
 }
@@ -219,6 +219,6 @@ img:hover{
 #lettre-o:hover{
   -webkit-transform: translate(100px) rotate(20deg);
   -webkit-transform-origin: 0 -250px;
-  transform: scale(0.5);
+  transform: scale(1);
   transform-origin: 50% 50%;
   }
