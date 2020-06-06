@@ -1,5 +1,6 @@
 .supprimer{
   margin: 40px;
+  color: #F39483;
 }
 
 .all{
@@ -26,6 +27,8 @@ header{
 #main-menu:target ~ header{
     left: 320px;
 }
+
+
 
 
 #container{
