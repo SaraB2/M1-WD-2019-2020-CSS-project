@@ -66,11 +66,15 @@ header{
 
 #container:target {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #container:target .box{
   margin: 20px;
+  flex-basis: 30%;
+  flex-grow: 1;
+  min-height: 300px;
 }
 
 
