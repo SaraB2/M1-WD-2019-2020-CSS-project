@@ -22,6 +22,52 @@ section {
   border-bottom: 2px solid #F39483;
   min-height: 100vh;
   margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.all{
+  position: absolute;
+  /* width: 100%; C'est cette ligne qui créait le bug de position au clic */
+  left: 50px;
+  padding-left: 20px;
+  transition: 1s all ease;
+}
+
+/* MENU */
+
+nav{
+  width: 60%;
+  min-height: 40%;
+  position: absolute;
+  top: 200px;
+  margin-left: 20px;
+  font-size: 2.5em;
+  line-height: 3;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li a{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+li a:hover{
+  -webkit-text-fill-color: #F39483;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:active{
+  color: white;
 }
 
 #main-menu{
@@ -43,7 +89,6 @@ section {
   right: 5px;
   width: 40px;
 }
-
 
 .burger-menu path{
   fill: white;
@@ -76,16 +121,6 @@ section {
   transform-origin: 26% 60%;
 }
 
-
-.all{
-  position: absolute;
-  /* width: 100%; C'est cette ligne qui créait le bug de position au clic */
-  left: 50px;
-  padding-left: 20px;
-  transition: 1s all ease;
-}
-
-
 #main-menu:target{
   left: 0px;
   top: 0px;
@@ -111,33 +146,7 @@ section {
   z-index: 998;
 }
 
-
-nav{
-  width: 60%;
-  min-height: 40%;
-  position: absolute;
-  top: 200px;
-  margin-left: 20px;
-  font-size: 2.5em;
-  line-height: 3;
-}
-
-nav ul{
-  list-style-type: none;
-  padding: 0;
-}
-
-li a{
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
-}
-
-li a:hover{
-  -webkit-text-fill-color: #F39483;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: white;
-}
-
+/* Images de décoration */
 
 .monkey{
   width: 300px;
@@ -145,18 +154,6 @@ li a:hover{
   top: 0;
   right: 0;
 }
-
-a{
-  color: white;
-  text-decoration: none;
-}
-
-a:active{
-  color: white;
-}
-
-
-/* section 2 */
 
 #grumpy{
   width: 20%;
@@ -168,13 +165,10 @@ a:active{
   width: 20%;
 }
 
-
-
 #playing{
   width: 22%;
   right: -129px;
   position: relative;
   bottom: -156px;
   transform: rotate(1deg);
-}
 }
